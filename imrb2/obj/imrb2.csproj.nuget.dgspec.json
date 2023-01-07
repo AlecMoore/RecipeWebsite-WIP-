@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pimnc\\source\\repos\\imrb2\\imrb2\\imrb2.csproj": {}
+    "D:\\Projects\\VS\\imrb2\\imrb2\\imrb2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pimnc\\source\\repos\\imrb2\\imrb2\\imrb2.csproj": {
+    "D:\\Projects\\VS\\imrb2\\imrb2\\imrb2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pimnc\\source\\repos\\imrb2\\imrb2\\imrb2.csproj",
+        "projectUniqueName": "D:\\Projects\\VS\\imrb2\\imrb2\\imrb2.csproj",
         "projectName": "imrb2",
-        "projectPath": "C:\\Users\\pimnc\\source\\repos\\imrb2\\imrb2\\imrb2.csproj",
+        "projectPath": "D:\\Projects\\VS\\imrb2\\imrb2\\imrb2.csproj",
         "packagesPath": "C:\\Users\\pimnc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pimnc\\source\\repos\\imrb2\\imrb2\\obj\\",
+        "outputPath": "D:\\Projects\\VS\\imrb2\\imrb2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Alec's Stuff\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,48 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.Azure.DurableTask.Core": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "Microsoft.CodeAnalysis": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.Web.Administration": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
