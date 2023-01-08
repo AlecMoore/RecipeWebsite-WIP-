@@ -1,9 +1,5 @@
 ﻿using imrb.Models;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using imrb.StoredProcedures;
 using System.Net.Mail;
 using System.Net;
 
@@ -12,7 +8,7 @@ namespace imrb.Controllers
     public class RegisterController : Controller
     {
 
-        public ActionResult Index()
+        public ActionResult SignUp()
         {
             return View();
         }
