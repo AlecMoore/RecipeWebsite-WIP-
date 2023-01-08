@@ -1,23 +1,15 @@
 ﻿using imrb.Models;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using imrb.StoredProcedures;
 using System.Net.Mail;
 using System.Net;
-using Microsoft.AspNetCore.Authorization;
 using System.Security.Principal;
-using System.Web;
-using System;
 using System.Security.Claims;
-using Microsoft.AspNetCore.Http;
 
 namespace imrb.Controllers
 {
     public class LoginController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Login()
         {
             return View();
         }
@@ -55,7 +47,6 @@ namespace imrb.Controllers
             }
         }
 
-        //[Authorize]
         public ActionResult LoggedIn()
         {
             return View();

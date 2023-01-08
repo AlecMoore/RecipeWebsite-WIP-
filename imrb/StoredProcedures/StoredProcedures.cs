@@ -1,8 +1,6 @@
 ﻿using imrb.Models;
-using Microsoft.Web.Administration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 
 
 
@@ -10,8 +8,6 @@ namespace imrb.StoredProcedures
 {
     public static class StoredProcedures
     {
-
-        //public static string SqlconString = System.Configuration.ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString;
         public static string SqlconString = "Server=tcp:imrb.database.windows.net,1433;Initial Catalog=imrb;Persist Security Info=False;User ID=TheFlyingNose;Password=SamAlecWank$$$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public static int CreateUser(User user)
         {

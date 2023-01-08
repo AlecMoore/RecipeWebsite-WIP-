@@ -7941,8 +7941,9 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pimnc\\.nuget\\packages\\": {},
-    "D:\\Alec's Stuff\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Alec\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -7950,16 +7951,18 @@
       "projectUniqueName": "D:\\Projects\\VS\\imrb\\imrb\\imrb.csproj",
       "projectName": "imrb",
       "projectPath": "D:\\Projects\\VS\\imrb\\imrb\\imrb.csproj",
-      "packagesPath": "C:\\Users\\pimnc\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Alec\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\VS\\imrb\\imrb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Alec's Stuff\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\pimnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alec\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -8051,7 +8054,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   },

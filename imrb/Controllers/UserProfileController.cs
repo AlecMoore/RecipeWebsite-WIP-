@@ -2,9 +2,9 @@
 
 namespace imrb.Controllers
 {
-    public class HomeController : Controller
+    public class UserProfileController : Controller
     {
-        public ActionResult Dashboard()
+        public ActionResult ProfileDashboard()
         {
             return View();
 
