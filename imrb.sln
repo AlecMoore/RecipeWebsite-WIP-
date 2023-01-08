@@ -5,6 +5,10 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "imrb", "imrb\imrb.csproj", "{D243664A-3905-4626-B5BD-D523A97C2CB9}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "ReactFrontEnd", "ReactFrontEnd\ReactFrontEnd.esproj", "{BDC96C0F-502D-4E08-BA0A-33F1D92D5668}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd", "BackEnd\BackEnd.csproj", "{D7F4FEFD-13AF-469C-8AD6-84289E6FDD6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{D243664A-3905-4626-B5BD-D523A97C2CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D243664A-3905-4626-B5BD-D523A97C2CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D243664A-3905-4626-B5BD-D523A97C2CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC96C0F-502D-4E08-BA0A-33F1D92D5668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC96C0F-502D-4E08-BA0A-33F1D92D5668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC96C0F-502D-4E08-BA0A-33F1D92D5668}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BDC96C0F-502D-4E08-BA0A-33F1D92D5668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC96C0F-502D-4E08-BA0A-33F1D92D5668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC96C0F-502D-4E08-BA0A-33F1D92D5668}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D7F4FEFD-13AF-469C-8AD6-84289E6FDD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F4FEFD-13AF-469C-8AD6-84289E6FDD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F4FEFD-13AF-469C-8AD6-84289E6FDD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F4FEFD-13AF-469C-8AD6-84289E6FDD6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
