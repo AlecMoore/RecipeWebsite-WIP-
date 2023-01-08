@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\VS\\imrb2\\imrb2\\imrb.csproj": {}
+    "D:\\Projects\\VS\\imrb\\imrb\\imrb.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\VS\\imrb2\\imrb2\\imrb.csproj": {
+    "D:\\Projects\\VS\\imrb\\imrb\\imrb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\VS\\imrb2\\imrb2\\imrb.csproj",
+        "projectUniqueName": "D:\\Projects\\VS\\imrb\\imrb\\imrb.csproj",
         "projectName": "imrb",
-        "projectPath": "D:\\Projects\\VS\\imrb2\\imrb2\\imrb.csproj",
+        "projectPath": "D:\\Projects\\VS\\imrb\\imrb\\imrb.csproj",
         "packagesPath": "C:\\Users\\pimnc\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\VS\\imrb2\\imrb2\\obj\\",
+        "outputPath": "D:\\Projects\\VS\\imrb\\imrb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Alec's Stuff\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -72,6 +72,10 @@
               "target": "Package",
               "version": "[11.1.0, )"
             },
+            "Node.js": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[6.0.1, )"
@@ -83,6 +87,10 @@
             "System.Net.Http": {
               "target": "Package",
               "version": "[4.3.4, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.2.3, )"
             }
           },
           "imports": [
