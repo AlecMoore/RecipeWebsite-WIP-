@@ -7,4 +7,9 @@
     <JavaScriptTestRoot>src\</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\components\" />
+    <Folder Include="src\styles\" />
+    <Folder Include="src\pages\" />
+  </ItemGroup>
 </Project>
