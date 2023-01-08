@@ -8,7 +8,8 @@ namespace imrb.StoredProcedures
 {
     public static class StoredProcedures
     {
-        public static string SqlconString = "Server=tcp:imrb.database.windows.net,1433;Initial Catalog=imrb;Persist Security Info=False;User ID=TheFlyingNose;Password=SamAlecWank$$$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        //public static string SqlconString = "Server=tcp:imrb.database.windows.net,1433;Initial Catalog=imrb;Persist Security Info=False;User ID=TheFlyingNose;Password=SamAlecWank$$$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        public static string SqlconString = "";
         public static int CreateUser(User user)
         {
             try
