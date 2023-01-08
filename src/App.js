@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 export default class App extends Component {
     static displayName = App.name;
 
