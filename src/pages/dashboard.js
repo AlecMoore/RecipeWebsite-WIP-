@@ -1,7 +1,8 @@
 import React from "react";
+import { div1 } from "./pageStyles";
 
 function dashboard() {
-  return <div classname="dashboard">dashboard</div>;
+  return <div1>dashboard</div1>;
 }
 
 export default dashboard;
