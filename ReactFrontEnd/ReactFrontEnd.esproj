@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.26-alpha">
+﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.26-alpha">
   <PropertyGroup Label="Globals">
     <ProjectGuid>bdc96c0f-502d-4e08-ba0a-33f1d92d5668</ProjectGuid>
   </PropertyGroup>
@@ -8,8 +8,9 @@
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\components\" />
-    <Folder Include="src\styles\" />
-    <Folder Include="src\pages\" />
+    <TypeScriptConfiguration Remove="src\styles\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\styles\**" />
   </ItemGroup>
 </Project>
