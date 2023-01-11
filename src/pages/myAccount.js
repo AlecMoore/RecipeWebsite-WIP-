@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-export class myAccount extends Component {
+export class MyAccount extends Component {
   render() {
-    return (
-      <div>myAccount</div>
-    )
+    return <div>My Account</div>;
   }
 }
 
-export default myAccount
+export default MyAccount;

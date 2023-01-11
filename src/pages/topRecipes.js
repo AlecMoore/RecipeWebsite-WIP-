@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-export class topRecipes extends Component {
+export class TopRecipes extends Component {
   render() {
-    return (
-      <div>topRecipes</div>
-    )
+    return <div>Top Recipes</div>;
   }
 }
 
-export default topRecipes
+export default TopRecipes;
