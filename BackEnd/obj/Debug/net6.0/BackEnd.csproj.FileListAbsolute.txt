@@ -32,3 +32,8 @@ D:\Projects\VS\imrb\BackEnd\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
 D:\Projects\VS\imrb\BackEnd\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
 D:\Projects\VS\imrb\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Projects\VS\imrb\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Projects\VS\imrb\BackEnd\obj\Debug\net6.0\staticwebassets\msbuild.BackEnd.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projects\VS\imrb\BackEnd\obj\Debug\net6.0\staticwebassets\msbuild.build.BackEnd.props
+D:\Projects\VS\imrb\BackEnd\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.BackEnd.props
+D:\Projects\VS\imrb\BackEnd\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.BackEnd.props
+D:\Projects\VS\imrb\BackEnd\obj\Debug\net6.0\staticwebassets.pack.json

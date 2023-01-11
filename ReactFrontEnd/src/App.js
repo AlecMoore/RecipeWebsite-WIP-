@@ -1,4 +1,13 @@
-import React, { Component } from 'react';
+import React from "react";
+import "./App.css";
+import Sidebar from "./components/sidebar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/dashboard";
+import TopCuisines from "./pages/topCuisines";
+import TopRecipes from "./pages/topRecipes";
+import Meals from "./pages/meals";
+import About from "./pages/about";
+import MyAccount from "./pages/myAccount";
 
 export default class App extends Component {
     static displayName = App.name;
@@ -8,39 +17,33 @@ export default class App extends Component {
         this.state = { forecasts: [], loading: true };
     }
 
-    componentDidMount() {
-        this.populateWeatherData();
-    }
+    //componentDidMount() {
+    //    this.populateWeatherData();
+    //}
 
-    static renderForecastsTable(forecasts) {
+    static renderForecastsTable() {
         return (
-            <table className='table table-striped' aria-labelledby="tabelLabel">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Temp. (C)</th>
-                        <th>Temp. (F)</th>
-                        <th>Summary</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {forecasts.map(forecast =>
-                        <tr key={forecast.date}>
-                            <td>{forecast.date}</td>
-                            <td>{forecast.temperatureC}</td>
-                            <td>{forecast.temperatureF}</td>
-                            <td>{forecast.summary}</td>
-                        </tr>
-                    )}
-                </tbody>
-            </table>
+            <>
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<Sidebar />}>
+                            <Route index element={<Dashboard />} />
+                            <Route path="TopCuisines" element={<TopCuisines />} />
+                            <Route path="TopRecipes" element={<TopRecipes />} />
+                            <Route path="Meals" element={<Meals />} />
+                            <Route path="About" element={<About />} />
+                            <Route path="MyAccount" element={<MyAccount />} />
+                        </Route>
+                    </Routes>
+                </Router>
+            </>
         );
     }
 
     render() {
         let contents = this.state.loading
             ? <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationreact">https://aka.ms/jspsintegrationreact</a> for more details.</em></p>
-            : App.renderForecastsTable(this.state.forecasts);
+            : App.renderForecastsTable();
 
         return (
             <div>
@@ -49,11 +52,5 @@ export default class App extends Component {
                 {contents}
             </div>
         );
-    }
-
-    async populateWeatherData() {
-        const response = await fetch('weatherforecast');
-        const data = await response.json();
-        this.setState({ forecasts: data, loading: false });
     }
 }
