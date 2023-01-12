@@ -18,7 +18,7 @@ const NavLogo = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #fffee9;
-  width: 250px;
+  width: 270px;
   height: 100vh;
   box-shadow: 1px 0px 10px;
   display: grid;
@@ -30,28 +30,6 @@ const SidebarNav = styled.nav`
   top: 0;
   transition: 400ms;
   z-index: 10;
-`;
-
-const AccountLink = styled(Link)`
-  display: flex;
-  color: #000000;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  list-style: none;
-  height: 50px;
-  text-decoration: none;
-  font-size: 18px;
-  &:hover {
-    background: #b4da81;
-    border-left: 6px solid #4e8c77;
-    cursor: pointer;
-    transition: 300ms;
-  }
-`;
-
-const SidebarLabel = styled.span`
-  margin-left: 16px;
 `;
 
 const SidebarWrap = styled.div`
@@ -78,9 +56,11 @@ function Sidebar() {
                 </SidebarWrap>
 
                 {/* Navbar account */}
+                <SidebarWrap>
                 {AccountsData.map((item, index) => {
                     return <SubMenu item={item} key={index} />;
                 })}
+                </SidebarWrap>
             </SidebarNav>
         </IconContext.Provider>
     )

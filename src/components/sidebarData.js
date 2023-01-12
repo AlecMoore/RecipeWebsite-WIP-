@@ -95,9 +95,4 @@ export const SidebarData = [
       },
     ],
   },
-  {
-    title: "About us",
-    path: "/About",
-    icon: <IoIcons.IoMdHelpCircle />,
-  },
 ];
