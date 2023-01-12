@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled from "styled-components"
 import { SidebarData } from "./sidebarData";
 import SubMenu from "./subMenu";
 import { AccountsData } from "./accountsData";
@@ -55,33 +55,35 @@ const SidebarLabel = styled.span`
 `;
 
 const SidebarWrap = styled.div`
-  width: 100%;
+
 `;
 
-const Sidebar = () => {
-  const [sidebar] = useState(false);
-  return (
-    <>
-      <IconContext.Provider value={{ color: "#000000" }}>
-        <SidebarNav sidebar={sidebar}>
-          {/* Sidebar main links */}
-          <SidebarWrap>
-            <NavLogo to="/">
-              <span>Logo</span>
-            </NavLogo>
-            {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
-            })}
-          </SidebarWrap>
+const testh1 = styled.h1`
+    font-size: 25px;
+`;
 
-          {/* Navbar account */}
-          {AccountsData.map((item, index) => {
-            return <SubMenu item={item} key={index} />;
-          })}
-        </SidebarNav>
-      </IconContext.Provider>
-    </>
-  );
-};
+function Sidebar() {
+    const [sidebar] = useState(false);
+    return (
+        <IconContext.Provider value={{ color: "#000000" }}>
+            <SidebarNav sidebar={sidebar}>
+                {/* Sidebar main links */}
+                <SidebarWrap>
+                    <NavLogo to="/">
+                        <span>Logo</span>
+                    </NavLogo>
+                    {SidebarData.map((item, index) => {
+                        return <SubMenu item={item} key={index} />;
+                    })}
+                </SidebarWrap>
+
+                {/* Navbar account */}
+                {AccountsData.map((item, index) => {
+                    return <SubMenu item={item} key={index} />;
+                })}
+            </SidebarNav>
+        </IconContext.Provider>
+    )
+}
 
 export default Sidebar;
