@@ -16,52 +16,29 @@ const NavLogo = styled(Link)`
   font-size: 25px;
 `;
 
-const SidebarNav = styled.nav`
-  background: #fffee9;
-  width: 270px;
-  height: 100vh;
-  box-shadow: 1px 0px 10px;
-  display: grid;
-  grid-template-columns: 250px;
-  grid-template-rows: 80vh 20vh;
-  overflow-y: auto;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  transition: 400ms;
-  z-index: 10;
-`;
-
 const SidebarWrap = styled.div`
-
-`;
-
-const testh1 = styled.h1`
-    font-size: 25px;
+    overflow-y: hidden;
 `;
 
 function Sidebar() {
-    const [sidebar] = useState(false);
     return (
         <IconContext.Provider value={{ color: "#000000" }}>
-            <SidebarNav sidebar={sidebar}>
-                {/* Sidebar main links */}
-                <SidebarWrap>
-                    <NavLogo to="/">
-                        <span>Logo</span>
-                    </NavLogo>
-                    {SidebarData.map((item, index) => {
-                        return <SubMenu item={item} key={index} />;
-                    })}
-                </SidebarWrap>
+            {/* Sidebar main links */}
+            <SidebarWrap>
+                <NavLogo to="/">
+                    <span>Logo</span>
+                </NavLogo>
+                {SidebarData.map((item, index) => {
+                    return <SubMenu item={item} key={index} />;
+                })}
+            </SidebarWrap>
 
-                {/* Navbar account */}
-                <SidebarWrap>
+            {/* Navbar account */}
+            <SidebarWrap>
                 {AccountsData.map((item, index) => {
                     return <SubMenu item={item} key={index} />;
                 })}
-                </SidebarWrap>
-            </SidebarNav>
+            </SidebarWrap>
         </IconContext.Provider>
     )
 }
