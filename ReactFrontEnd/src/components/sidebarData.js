@@ -10,7 +10,6 @@ import * as BiIcons from "react-icons/bi";
 export const SidebarData = [
   {
     title: "Top Cuisines",
-    path: "/TopCuisines",
     icon: <BsIcons.BsFillSignpost2Fill />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -39,20 +38,16 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "French",
-        path: "/TopCuisines/French",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
         title: "Mediterranean",
         path: "/TopCuisines/Mediterranean",
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "South-East Asian",
-        path: "/TopCuisines/South-EastAsian",
+        title: "View More",
+        path: "/TopCuisines",
         icon: <IoIcons.IoIosPaper />,
       },
+
     ],
   },
   {
@@ -62,7 +57,6 @@ export const SidebarData = [
   },
   {
     title: "Meals",
-    path: "/Meals",
     icon: <ImIcons.ImSpoonKnife />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,

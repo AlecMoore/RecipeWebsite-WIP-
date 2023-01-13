@@ -13,4 +13,7 @@
   <ItemGroup>
     <None Remove="src\styles\**" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\layout\" />
+  </ItemGroup>
 </Project>
