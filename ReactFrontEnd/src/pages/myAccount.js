@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import Regster from 'D:/Projects/VS/imrb/ReactFrontEnd/src/components/registrationForm'
+
 
 export class MyAccount extends Component {
   render() {
-    return <div>My Account</div>;
+    return <Regster/>
   }
 }
 

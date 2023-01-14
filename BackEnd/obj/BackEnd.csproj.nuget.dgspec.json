@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\BackEnd\\BackEnd.csproj": {}
+    "D:\\Projects\\VS\\imrb\\BackEnd\\BackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\BackEnd\\BackEnd.csproj": {
+    "D:\\Projects\\VS\\imrb\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "D:\\Projects\\VS\\imrb\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\Geoff Banks Team\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\BackEnd\\obj\\",
+        "projectPath": "D:\\Projects\\VS\\imrb\\BackEnd\\BackEnd.csproj",
+        "packagesPath": "C:\\Users\\pimnc\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\VS\\imrb\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Alec's Stuff\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Geoff Banks Team\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pimnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
