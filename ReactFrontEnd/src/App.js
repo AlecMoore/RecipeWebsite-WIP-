@@ -11,7 +11,6 @@ import MyAccount from "./pages/myAccount";
 
 export default function App() {
     return (
-        <>
             <Router>
                 <Routes>
                     <Route path="/" element={<Layout />}>
@@ -24,6 +23,5 @@ export default function App() {
                     </Route>
                 </Routes>
             </Router>
-        </>
     );
 }
