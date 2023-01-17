@@ -1,29 +1,31 @@
 import Sidebar from "../components/sidebar"
+import { useState } from "react"
 import styled from "styled-components"
+import { Link, Outlet } from "react-router-dom";
+import Dashboard from "../pages/dashboard";
+
+const Container = styled.div`
+`
+
+const MainContent = styled.div`
+    width: 100%;
+    padding-left: 220px;
+    justify-content: center;
+    display: flex;
+    height: 100%;
 
 
-
-const SidebarNav = styled.nav`
-  background: #fffee9;
-  height: 100vh;
-  box-shadow: 1px 0px 10px;
-  display: grid;
-  grid-template-columns: 220px;
-  grid-template-rows: 80vh 20vh;
-  overflow-y: hidden;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  transition: 400ms;
-  z-index: 10;
 `;
 
-
 const Layout = () => {
+
     return (
-        <SidebarNav>
+        <Container className="Window">
             <Sidebar />
-        </SidebarNav>
+            <MainContent>
+                <Outlet/>
+            </MainContent>
+        </Container>
     )
 }
 
