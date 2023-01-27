@@ -1,32 +1,19 @@
 import Sidebar from "../components/sidebar"
-import { useState } from "react"
-import styled from "styled-components"
+import "../styles/style.css";
+import "../styles/LayoutStyles.css"
 import { Link, Outlet } from "react-router-dom";
-import Dashboard from "../pages/dashboard";
 
-const Container = styled.div`
-`
-
-const MainContent = styled.div`
-    width: 100%;
-    padding-left: 220px;
-    justify-content: center;
-    display: flex;
-    height: 100%;
-
-
-`;
 
 const Layout = () => {
-
     return (
-        <Container className="Window">
+        <div className="Window">
             <Sidebar />
-            <MainContent>
+            <div className="outlet-content">
                 <Outlet/>
-            </MainContent>
-        </Container>
-    )
-}
+            </div>
+        </div>
 
+    )}
+/*
+ */
 export default Layout;
