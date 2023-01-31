@@ -1,12 +1,12 @@
 ﻿const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const context = [
-    "/recipeapp",
+    "/register",
 ];
 
 module.exports = function (app) {
     const appProxy = createProxyMiddleware(context, {
-        target: 'https://localhost:5001',
+        target: 'https://localhost:7242',
         secure: false
     });
 

@@ -5,44 +5,58 @@ using System.Net;
 
 namespace imrb.Controllers
 {
-    public class RegisterController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class RegisterController : ControllerBase
     {
 
-        public ActionResult SignUp()
+        //public ActionResult SignUp()
+        //{
+        //    return View();
+        //}
+
+        [HttpGet("[action]")]
+        public int hello()
         {
-            return View();
+            return 0;
         }
 
-        [ValidateAntiForgeryToken]
-        [HttpPost]
-        public ActionResult CreateUser(User user)
+        [HttpPost("[action]")]
+        public int wanker(int cunt)
         {
-
-            user.Password = Hashing.HashPassword(user.Password);
-
-            int userId = StoredProcedures.StoredProcedures.CreateUser(user);
-            string error = string.Empty;
-            switch (userId)
-            {
-                case -1:
-                    error = "Username already exists.\\nPlease choose a different username.";
-                    break;
-                case -2:
-                    error = "Supplied email address has already been used.";
-                    break;
-                default:
-                    error = "Registration successful. Activation email has been sent. ";
-                    user.Id = userId;
-                    SendActivationEmail(user);
-                    return ConfirmEmail();
-            }
-
-            ModelState.AddModelError("", error);
-
-            return View("Index");
+            return cunt;
         }
 
-        private void SendActivationEmail(User user)
+        [HttpPost("[action]")]
+        public int CreateUser(int Id, string Email/*, string Password, string Username*/)
+        {
+        //    User user = new User(Id, Email, Password, Username);
+        //    user.Password = Hashing.HashPassword(user.Password);
+
+        //    int userId = StoredProcedures.StoredProcedures.CreateUser(user);
+        //    string error = string.Empty;
+            int result = 0;
+            //switch (userId)
+            //{
+            //    case -1:
+            //        error = "Username already exists.\\nPlease choose a different username.";
+            //        break;
+            //    case -2:
+            //        error = "Supplied email address has already been used.";
+            //        break;
+            //    default:
+            //        error = "Registration successful. Activation email has been sent. ";
+            //        user.Id = userId;
+            //        result = SendActivationEmail(user);
+            //        break;
+            //}
+
+            //ModelState.AddModelError("", error);
+
+            return result;
+        }
+
+        private int SendActivationEmail(User user)
         {
             Guid activationCode = Guid.NewGuid();
             StoredProcedures.StoredProcedures.InsertActivationCode(user.Id, activationCode);
@@ -65,28 +79,29 @@ namespace imrb.Controllers
                 smtp.Port = 587;
                 smtp.Send(mm);
             }
+            return 1;
         }
 
-        public ActionResult ConfirmEmail()
-        {
-            return View("ConfirmEmail");
-        }
+        //public ActionResult ConfirmEmail()
+        //{
+        //    return View("ConfirmEmail");
+        //}
 
-        public ActionResult EmailActivation(Guid ActivationCode)
-        {
-            int response = StoredProcedures.StoredProcedures.CompareActivationCode(ActivationCode);
+        //public ActionResult EmailActivation(Guid ActivationCode)
+        //{
+        //    int response = StoredProcedures.StoredProcedures.CompareActivationCode(ActivationCode);
 
 
-            switch (response)
-            {
-                case 2:
-                    return Redirect("/Login/LoggedIn");
+        //    switch (response)
+        //    {
+        //        case 2:
+        //            return Redirect("/Login/LoggedIn");
 
-                default:
-                    return View();
+        //        default:
+        //            return View();
 
-            }
+        //    }
 
-        }
+        //}
     }
 }

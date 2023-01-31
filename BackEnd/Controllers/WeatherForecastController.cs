@@ -29,5 +29,11 @@ namespace BackEnd.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost("[action]")]
+        public int wanker(int cunt)
+        {
+            return cunt;
+        }
     }
 }

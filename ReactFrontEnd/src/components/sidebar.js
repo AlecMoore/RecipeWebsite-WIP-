@@ -58,7 +58,7 @@ function Sidebar() {
                         </ul>
                     </nav>
                 </div>
-                <a href="#" className="account-login">
+                <a href="/MyAccount" className="account-login">
                     Log in / Register
                 </a>
                 <div id="footer">
