@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = imrb
 build_property.RootNamespace = imrb
-build_property.ProjectDir = C:\Users\Geoff Banks Team\Documents\GitHub\recipe\imrb\imrb\
+build_property.ProjectDir = c:\Users\Geoff Banks Team\Documents\GitHub\recipe\imrb\imrb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Geoff Banks Team\Documents\GitHub\recipe\imrb\imrb
+build_property.MSBuildProjectDirectory = c:\Users\Geoff Banks Team\Documents\GitHub\recipe\imrb\imrb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Home/Dashboard.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Login/LoggedIn.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Login/LoggedIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9nZ2VkSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Login/Login.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Login/PasswordRecovery.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Login/PasswordRecovery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUGFzc3dvcmRSZWNvdmVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Login/PasswordReset.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Login/PasswordReset.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUGFzc3dvcmRSZXNldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Recipe/CreateRecipe.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Recipe/CreateRecipe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXENyZWF0ZVJlY2lwZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Recipe/ReviewRecipe.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Recipe/ReviewRecipe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXFJldmlld1JlY2lwZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Recipe/ViewRecipe.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Recipe/ViewRecipe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXFZpZXdSZWNpcGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Register/ConfirmEmail.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Register/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcQ29uZmlybUVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Register/SignUp.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Register/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/UserProfile/ProfileDashboard.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/UserProfile/ProfileDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclByb2ZpbGVcUHJvZmlsZURhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/_ViewImports.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/_ViewStart.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Shared/_Layout.cshtml]
+[c:/Users/Geoff Banks Team/Documents/GitHub/recipe/imrb/imrb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-co4kaa5xyu
