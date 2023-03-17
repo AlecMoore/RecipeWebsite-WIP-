@@ -28,6 +28,17 @@ yarn-error.log*
 *.pdb
 *.v2
 *.v1
+*.props
+*.exe
 
-
-
+.vs/imrb/v17/.suo
+BackEnd/obj/BackEnd.csproj.nuget.dgspec.json
+BackEnd/obj/project.assets.json
+imrb/obj/project.assets.json
+imrb/bin/Debug/net6.0/imrb.staticwebassets.runtime.json
+imrb/obj/Debug/net6.0/imrb.csproj.FileListAbsolute.txt
+imrb/obj/Debug/net6.0/staticwebassets.build.json
+imrb/obj/Debug/net6.0/staticwebassets.development.json
+imrb/obj/Debug/net6.0/staticwebassets.pack.json
+imrb/obj/imrb.csproj.nuget.dgspec.json
+imrb/obj/project.assets.json
