@@ -42,3 +42,6 @@ imrb/obj/Debug/net6.0/staticwebassets.development.json
 imrb/obj/Debug/net6.0/staticwebassets.pack.json
 imrb/obj/imrb.csproj.nuget.dgspec.json
 imrb/obj/project.assets.json
+*.2
+*.user
+*.lock
