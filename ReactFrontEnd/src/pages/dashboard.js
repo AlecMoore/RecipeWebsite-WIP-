@@ -1,5 +1,4 @@
 import React from "react";
-import Modal from "react-modal";
 import background from "../media/foodplate.png";
 import ingredients from "../media/ingredientsimg1.png";
 import "../styles/DashboardStyles.css";
