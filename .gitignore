@@ -45,3 +45,10 @@ imrb/obj/project.assets.json
 *.2
 *.user
 *.lock
+BackEnd/obj/Debug/net6.0/BackEnd.csproj.FileListAbsolute.txt
+imrb/bin/Debug/net6.0/appsettings.Development.json
+imrb/bin/Debug/net6.0/appsettings.json
+imrb/bin/Debug/net6.0/imrb.runtimeconfig.json
+imrb/obj/Debug/net6.0/project.razor.vs.json
+imrb/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+imrb/Properties/launchSettings.json

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import FacebookLogin from 'react-facebook-login';
-import GoogleLogin from 'react-google-login';
 import axios from 'axios';
+import { FacebookLoginButton, GoogleLoginButton } from 'react-social-login-buttons';
+import SignUpWithEmailButton from './SignUpWithEmailButton';
 
 const Register = () => {
     const [showInputs, setShowInputs] = useState(false);
@@ -14,24 +14,23 @@ const Register = () => {
     };
 
     const handleFacebookSignup = (response) => {
-        // handle Facebook signup logic here
         console.log(response);
         createUser(response.email, response.name, 'facebook');
     };
 
     const handleGoogleSignup = (response) => {
-        // handle Google signup logic here
         console.log(response);
         createUser(response.profileObj.email, response.profileObj.name, 'google');
     };
 
     const createUser = (email, fullName, source) => {
-        axios.post('/api/users', { email, fullName, source })
-            .then(response => {
+        axios
+            .post('/api/users', { email, fullName, source })
+            .then((response) => {
                 console.log('User created:', response.data);
                 // handle success case here
             })
-            .catch(error => {
+            .catch((error) => {
                 console.log('Error creating user:', error);
                 // handle error case here
             });
@@ -42,20 +41,9 @@ const Register = () => {
             <h2>Register</h2>
             {!showInputs && (
                 <>
-                    <button onClick={() => setShowInputs(true)}>Sign up with Email</button>
-                    <FacebookLogin
-                        appId="test"
-                        autoLoad={false}
-                        fields="name,email,picture"
-                        callback={handleFacebookSignup}
-                    />
-                    <GoogleLogin
-                        clientId="test"
-                        buttonText="Sign up with Google"
-                        onSuccess={handleGoogleSignup}
-                        onFailure={(error) => console.log(error)}
-                        cookiePolicy={'single_host_origin'}
-                    />
+                    <SignUpWithEmailButton onClick={() => setShowInputs(true)} />
+                    <FacebookLoginButton onClick={handleFacebookSignup} />
+                    <GoogleLoginButton onClick={handleGoogleSignup} />
                 </>
             )}
             {showInputs && (
