@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 
-export class About extends Component {
+export default class About extends Component {
   render() {
-    return <div>about</div>;
+    return (
+      <div>
+        Alec has not many friends in real life so we decided to make a wesbite
+        to display recipes xD.
+      </div>
+    );
   }
 }
-
-export default About;

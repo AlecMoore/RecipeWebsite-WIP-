@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\obj\\Debug\\net6.0\\project.razor.json",
-  "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\imrb.csproj",
+  "SerializedFilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\BackEnd\\obj\\Debug\\net6.0\\project.razor.json",
+  "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\BackEnd\\BackEnd.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -18371,83 +18371,7 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "imrb",
-  "Documents": [
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Login\\LoggedIn.cshtml",
-      "TargetPath": "Views\\Login\\LoggedIn.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Home\\Dashboard.cshtml",
-      "TargetPath": "Views\\Home\\Dashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Login\\PasswordReset.cshtml",
-      "TargetPath": "Views\\Login\\PasswordReset.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Login\\Login.cshtml",
-      "TargetPath": "Views\\Login\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Login\\PasswordRecovery.cshtml",
-      "TargetPath": "Views\\Login\\PasswordRecovery.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Register\\ConfirmEmail.cshtml",
-      "TargetPath": "Views\\Register\\ConfirmEmail.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Register\\SignUp.cshtml",
-      "TargetPath": "Views\\Register\\SignUp.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Recipe\\CreateRecipe.cshtml",
-      "TargetPath": "Views\\Recipe\\CreateRecipe.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Recipe\\ViewRecipe.cshtml",
-      "TargetPath": "Views\\Recipe\\ViewRecipe.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\UserProfile\\ProfileDashboard.cshtml",
-      "TargetPath": "Views\\UserProfile\\ProfileDashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Geoff Banks Team\\Documents\\GitHub\\recipe\\imrb\\imrb\\Views\\Recipe\\ReviewRecipe.cshtml",
-      "TargetPath": "Views\\Recipe\\ReviewRecipe.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "RootNamespace": "BackEnd",
+  "Documents": [],
   "SerializationFormat": "0.3"
 }
