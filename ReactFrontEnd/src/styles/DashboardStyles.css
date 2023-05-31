@@ -147,15 +147,7 @@
 }
 
 /***********************************************************************
-    Placeholder text in search 'button'
-***********************************************************************/
-
-#search-button #search-placeholder {
-  padding-left: 20px;
-}
-
-/***********************************************************************
-    Designs for search modal
+    Designs for login/register modal
 ***********************************************************************/
 .login-modal {
   position: absolute;
@@ -182,6 +174,10 @@
   font-size: 25px;
 }
 
+#register-form .login-title {
+  left: 70px;
+}
+
 .line {
   position: absolute;
   height: 2px;
@@ -202,14 +198,47 @@
 /* Login container */
 
 .login-container {
-  margin-top: 150px;
+  position: absolute;
+  left: 0px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  transition: all 500ms ease-in-out;
 }
 
-.login-modal .input-container {
+/* Register container */
+
+.register-container {
+  position: absolute;
+  left: 0px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  transition: all 500ms ease-in-out;
+}
+
+#register-form .login-container {
+  position: absolute;
+  left: 500px;
+  transition: all 500ms ease-in-out;
+}
+
+#login-form .register-container {
+  left: -500px;
+  transition: all 500ms ease-in-out;
+}
+
+/* Input containers */
+
+.input-container {
   margin-top: 40px;
   margin-left: 50px;
   display: flex;
   justify-content: left;
+}
+
+.register-container .input-container {
+  margin-top: 20px;
 }
 
 .input-container input {
@@ -228,10 +257,8 @@
 /* Submit button */
 
 .button-container {
-  position: absolute;
-  width: 150px;
-  right: 50px;
-  top: 280px;
+  width: 350px;
+  margin-left: 50px;
 }
 
 .button-container input {
@@ -253,16 +280,17 @@
   color: #fff;
 }
 
-/* Register button */
+/* Register and login buttons */
 
-.register-container {
-  position: absolute;
-  width: 150px;
-  left: 50px;
-  top: 280px;
+.login-switch-button,
+.register-switch-button {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
 }
 
-.register-container button {
+.login-switch-button button,
+.register-switch-button button {
   width: inherit;
   border: 2px solid #000;
   padding: 8px 20px 9px;
@@ -271,31 +299,29 @@
   color: #000;
   transition: 100ms;
   background-color: transparent;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
-.register-container button:hover {
+.login-switch-button button:hover,
+.register-switch-button button:hover {
   background-color: #13678a;
   border: 2px solid #012030;
   color: #fff;
 }
 
-/* Social Login title */
-
-.social-login-title {
-  position: absolute;
-  bottom: 150px;
-  left: 162px;
-  font-size: 18px;
+.login-switch-button {
+  margin-top: 25px;
 }
 
 /* Social Login icons */
 
 .social-login-container {
-  position: absolute;
-  bottom: 100px;
-  left: 120px;
+  width: 350px;
+  margin-left: 50px;
+  margin-bottom: 130px;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-login-container .icon {
@@ -305,17 +331,11 @@
   cursor: pointer;
 }
 
-/* Register form */
+/* Social Login title */
 
-.register-form {
-  position: absolute;
-  bottom: -200px;
-  background: #fff;
-  transition: 3ms ease-in;
-}
-
-.register-form a {
-  top: 10px;
+.social-login-title {
+  width: 100%;
+  font-size: 18px;
 }
 
 /***********************************************************************

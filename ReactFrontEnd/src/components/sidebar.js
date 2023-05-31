@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import LoginModal from "./loginModal";
 import "../styles/style.css";
-import * as Icon from "react-bootstrap-icons";
 
 function Sidebar() {
   const [isActive, setActive] = useState(false);
@@ -16,18 +16,6 @@ function Sidebar() {
   function closeModal() {
     setIsOpen(false);
   }
-
-  const [register, setRegister] = useState(false);
-  const toggleRegister = () => {
-    setRegister(!register);
-  };
-
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-    );
 
   return (
     <div className={isActive ? "" : "mobile-nav-active"}>
@@ -85,82 +73,13 @@ function Sidebar() {
             </button>
 
             <Modal
-              className="login-modal"
+              className={"login-modal"}
               closeTimeoutMS={150}
               isOpen={modalIsOpen}
               onRequestClose={closeModal}
               contentLabel="Example"
             >
-              <div className="login-container">
-                <div className="login-title">
-                  <span className="line left-line" />
-                  Login
-                  <span className="line right-line" />
-                </div>
-                <form>
-                  <div className="input-container">
-                    <input
-                      type="text"
-                      name="uname"
-                      placeholder="Email Address"
-                      maxLength={30}
-                      required
-                    />
-                    {renderErrorMessage("uname")}
-                  </div>
-                  <div className="input-container">
-                    <input
-                      type="password"
-                      name="pass"
-                      placeholder="Password"
-                      maxLength={30}
-                      required
-                    />
-                    {renderErrorMessage("pass")}
-                  </div>
-                  <div className="button-container">
-                    <input type="submit" />
-                  </div>
-                </form>
-                <div className="register-container">
-                  <button className="register-button" onClick={toggleRegister}>
-                    Register
-                  </button>
-                </div>
-                <div className="social-login-title">Sign in with</div>
-                <div className="social-login-container">
-                  <Icon.Facebook className="icon facebook-icon" />
-                  <Icon.Google className="icon google-icon" />
-                  <Icon.Twitter className="icon Twitter-icon" />
-                </div>
-              </div>
-              <div className={register ? "register-form" : "register-form a"}>
-                <form>
-                  <div className="input-container">
-                    <input
-                      type="text"
-                      name="uname"
-                      placeholder="Email Address"
-                      maxLength={30}
-                      required
-                    />
-                    {renderErrorMessage("uname")}
-                  </div>
-                  <div className="input-container">
-                    <input
-                      type="password"
-                      name="pass"
-                      placeholder="Password"
-                      maxLength={15}
-                      required
-                    />
-                    {renderErrorMessage("pass")}
-                  </div>
-                  <div className="button-container">
-                    <input type="submit" />
-                  </div>
-                </form>
-              </div>
+              <LoginModal />
             </Modal>
 
             <div className="container">

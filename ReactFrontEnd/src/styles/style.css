@@ -214,7 +214,7 @@ a{
   width: 18px;
   background-color: #fff;
   border-radius: 100px;
-  transition: 300ms ease;
+  transition: 500ms ease;
 }
 
 #mobile-nav-toggle .top_line {
