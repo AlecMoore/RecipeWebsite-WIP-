@@ -153,7 +153,7 @@ a{
   padding: 10px 25px;
   margin-bottom: 10px;
   transition: 0.3s;
-  font-size: 18px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -168,7 +168,8 @@ a{
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
-  text-decoration: none;
+  text-decoration: underline;
+  transition: 100ms ease;
   color: #13678a;
 }
 
