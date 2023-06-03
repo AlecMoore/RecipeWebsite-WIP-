@@ -1,0 +1,297 @@
+/*
+    COLOURS:
+    Sidebar Background: #012030
+    Accent 1: #13678a
+    Accent 2: #45c4b0
+*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a{
+    font-family: "PT Serif", serif;
+}*/
+
+/*--------------------------------------------------------------
+# Login Button
+--------------------------------------------------------------*/
+
+.account-login {
+  border: 2px solid #000;
+  padding: 8px 20px 9px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  transition: 100ms;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+
+.account-login:hover {
+  background-color: #13678a;
+  border: 2px solid #012030;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Header (Logo, Title and Divider)
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 310px;
+  margin: 2px;
+  transition: all ease-in-out 0.3s;
+  z-index: 1;
+  transition: all 0.5s;
+  border-bottom: solid black 2px;
+  border-right: solid black 2px;
+  border-left: solid black 2px;
+  background-color: #fff;
+  overflow-y: auto;
+  text-align: center;
+}
+
+#header .profile {
+  display: flex;
+  margin-top: 40px;
+  border-top: solid black 2px;
+  justify-content: center;
+}
+
+#header .profile h1 {
+  background-color: #fff;
+  width: 50%;
+  top: -15px;
+  position: relative;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .profile .profile-divider {
+  margin-top: 30px;
+  height: 10px;
+  width: 90%;
+  border-top: 5px solid #13678a;
+}
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/*    #header .account-login {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding-top: 6px;
+        margin-top: 200px;
+        font-size: 20px;
+        background: #212431;
+        color: #fff;
+        border: none;
+        border-radius: 8%;
+        width: 200px;
+        height: 40px;
+        transition: 0.2s;
+        cursor: pointer;
+        text-decoration: none;
+    }*/
+
+@media (max-width: 1199px) {
+  #header {
+    left: -315px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sidebar
+    I understand this is a mess
+--------------------------------------------------------------*/
+.nav-menu {
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: inline-block;
+  color: #000;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  font-size: 18px;
+  text-align: center;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #000000;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+  text-decoration: none;
+  color: #13678a;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > a i {
+  color: #149ddd;
+}
+
+/* Mobile Navigation */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #012030;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media (min-width: 1199px) {
+  #mobile-nav-toggle {
+    display: none;
+    opacity: 0;
+  }
+}
+
+#mobile-nav-toggle .common {
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  background-color: #fff;
+  border-radius: 100px;
+  transition: 500ms ease;
+}
+
+#mobile-nav-toggle .top_line {
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#mobile-nav-toggle .middle_line {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#mobile-nav-toggle .bottom_line {
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#mobile-nav-toggle #activet {
+  left: 11px;
+  top: 18px;
+  width: 19px;
+  transform: rotate(45deg);
+}
+
+#mobile-nav-toggle #activem {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+#mobile-nav-toggle #activeb {
+  left: 11px;
+  top: 18px;
+  width: 19px;
+  transform: rotate(-45deg);
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+  transition: opacity 0.1ms ease;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 15px;
+  color: #000;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.6s;
+  transition: all 0.5s;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* @media (max-width: 1199px) {
+  #footer {
+    display: none;
+    /*position: static;
+    width: auto;
+  }
+}*/
