@@ -13,7 +13,7 @@ export default class Dashboard extends Component {
         <div className="hero-container">
           <div className="hero-text">
             <div className="border-text">Welcome to Unnamed Recipe Website</div>
-            <h1>Recipes Without The Rubbish</h1>
+            <h1>Hero Text Placeholder</h1>
           </div>
         </div>
         <Searchbar />
