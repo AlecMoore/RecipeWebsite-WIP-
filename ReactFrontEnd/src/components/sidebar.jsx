@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import { NavLink }  from "react-router-dom"
 import LoginModal from "./loginModal";
 import "../styles/style.css";
 
@@ -34,35 +35,25 @@ function Sidebar() {
         <div className="sidebar-border">
           <div className="profile">
             <h1 className="text-light">
-              <a href="/">Unnamed Recipe Website</a>
+              <a href="/">Spork.</a>
             </h1>
           </div>
           <nav id="navbar" className="nav-menu">
             <ul>
               <li>
-                <a href="/" className="nav-link  active">
-                  Home
-                </a>
+                <NavLink to="/" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Home</NavLink>
               </li>
               <li>
-                <a href="/TopRecipes" className="nav-link">
-                  Top Recipes
-                </a>
+                <NavLink to="/TopRecipes" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Top Recipes</NavLink>
               </li>
               <li>
-                <a href="/Meals" className="nav-link">
-                  Meals
-                </a>
+                <NavLink to="/Meals" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Meals</NavLink>
               </li>
               <li>
-                <a href="/Cuisines" className="nav-link">
-                  Cuisines
-                </a>
+                <NavLink to="/Cuisines" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Cuisines</NavLink>
               </li>
               <li>
-                <a href="/Occasions" className="nav-link ">
-                  Occasions
-                </a>
+                <NavLink to="/Occasions" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Occasions</NavLink>
               </li>
             </ul>
           </nav>

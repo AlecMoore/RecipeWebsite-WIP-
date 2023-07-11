@@ -16,7 +16,11 @@
   padding: 0;
   letter-spacing: 2px;
 }
-
+body {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 /*h1,
 h2,
 h3,
@@ -28,27 +32,6 @@ a{
 }*/
 
 /*--------------------------------------------------------------
-# Login Button
---------------------------------------------------------------*/
-
-.account-login {
-  border: 2px solid #000;
-  padding: 8px 20px 9px;
-  font-size: 14px;
-  text-decoration: none;
-  color: #000;
-  transition: 100ms;
-  background-color: transparent;
-  margin-bottom: 50px;
-}
-
-.account-login:hover {
-  background-color: #13678a;
-  border: 2px solid #012030;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
 # Header (Logo, Title and Divider)
 --------------------------------------------------------------*/
 #header {
@@ -56,8 +39,8 @@ a{
   top: 0;
   left: 0;
   bottom: 0;
-  width: 310px;
   margin: 2px;
+  width: 330px;
   transition: all ease-in-out 0.3s;
   z-index: 1;
   transition: all 0.5s;
@@ -81,7 +64,7 @@ a{
   width: 50%;
   top: -15px;
   position: relative;
-  font-size: 24px;
+  font-size: 30px;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -121,7 +104,7 @@ a{
 
 @media (max-width: 1199px) {
   #header {
-    left: -315px;
+    left: -350px;
   }
 
   #main {
@@ -146,39 +129,43 @@ a{
   list-style: none;
 }
 
-.nav-menu a,
-.nav-menu a:focus {
+.nav-link {
   display: inline-block;
+  position: relative;
   color: #000;
   padding: 10px 25px;
   margin-bottom: 10px;
-  transition: 0.3s;
   font-size: 28px;
   text-align: center;
+  text-decoration: none;
 }
 
-.nav-menu a i,
-.nav-menu a:focus i {
-  font-size: 24px;
-  padding-right: 8px;
-  color: #000000;
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #caebf2;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
 }
 
-.nav-menu a:hover,
+.nav-link:hover:after,
+.nav-link.active:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
-  text-decoration: underline;
-  transition: 100ms ease;
-  color: #13678a;
-}
-
-.nav-menu a:hover i,
-.nav-menu .active i,
-.nav-menu .active:focus i,
-.nav-menu li:hover > a i {
-  color: #149ddd;
-}
+  transition: 200ms ease;
+  color: #9aeba3;
+} */
 
 /* Mobile Navigation */
 #mobile-nav-toggle {
@@ -262,6 +249,28 @@ a{
 
 .mobile-nav-active #header {
   left: 0;
+}
+
+/*--------------------------------------------------------------
+# Login Button
+--------------------------------------------------------------*/
+
+.account-login {
+  border: 2px solid #000;
+  padding: 8px 20px 9px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  transition: 100ms;
+  background-color: transparent;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.account-login:hover {
+  background-color: #caebf2;
+  border: 2px solid #012030;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
