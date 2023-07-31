@@ -52,9 +52,9 @@ export default function LoginModal () {
                   <div className="social-login-container">
                     <span className="social-login-title">
                       Sign in with
-                      <Icon.Facebook className="icon facebook-icon" />
-                      <Icon.Google className="icon google-icon" />
-                      <Icon.Twitter className="icon Twitter-icon" />
+                    <Icon.Facebook className="icon facebook-icon" />
+                    <Icon.Google className="icon google-icon" />
+                    <Icon.Twitter className="icon Twitter-icon" />
                     </span>
                   </div>
 
