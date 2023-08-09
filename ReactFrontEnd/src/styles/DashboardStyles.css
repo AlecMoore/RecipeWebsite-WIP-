@@ -31,56 +31,44 @@
 /***********************************************************************
     Main Container for dashboard
 ***********************************************************************/
+.container {
+  border-radius: 20px;
+  background-color: #fdeff0;
+}
 
-#container {
+.dashboard {
+  padding: 15px 50px 0 150px;
+}
+
+.hero {
   display: flex;
   flex-direction: column;
   place-items: center;
   transition: 200ms;
-  width: 60%;
-  height: 100%;
-  margin-left: 400px;
 }
 
-.bgimg {
-  position: absolute;
-  opacity: 70%;
-  z-index: -1;
+.random-recipe {
+  padding: 15px;
+  transition: 200ms;
 }
 
-#plate {
-  transition: 300ms;
-  top: -150px;
-  left: -150px;
+.search-bar {
+  padding: 10px;
 }
 
-#dash {
-  transition: 300ms;
-  top: -50px;
-  right: 0px;
-  width: 700px;
-  height: 846px;
-}
-
-@media only screen and (min-width: 1199px) {
-  #plate {
-    left: 20px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  #plate {
-    width: 422.4px;
-    height: 420px;
-  }
+.random-recipe h1 {
+  font-size: 30px;
+  margin: 5px;
 }
 
 /***********************************************************************
     Hero section
 ***********************************************************************/
 
-.hero-container {
-  width: 1400px;
-  height: 400px;
+.hero-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -89,27 +77,18 @@
   transition: 0.6s ease-in-out;
 }
 
-.hero-text {
-  z-index: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  background-color: #fff;
-}
-
 .hero-text h1 {
-  font-size: 250px;
+  font-size: 120px;
   letter-spacing: 10px;
 }
 
 .hero-text p {
   position: relative;
-  top: -30px;
+  top: -25px;
   height: 35px;
-  width: 1000px;
   border-radius: 10px;
-  padding-top: 8px;
-  font-size: 23px;
+  padding-top: 6px;
+  font-size: 20px;
   letter-spacing: 5px;
   background-color: #caebf2;
   opacity: 0.9;
@@ -127,7 +106,14 @@
   top: -10px;
 }
 
-@media only screen and (max-width: 800px) {
+/***********************************************************************
+    Dash Card Styles
+***********************************************************************/
+.recipe-image {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
   .hero-text h1 {
     font-size: 150px;
   }
@@ -135,43 +121,6 @@
     font-size: 15px;
   }
 }
-
-/***********************************************************************
-    Div that contains the search 'button'
-***********************************************************************/
-
-.search {
-  margin: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search #search-bar {
-  width: 680px;
-  border-radius: 10px;
-  display: flex;
-  padding: 8px 50px 9px;
-  font-size: 24px;
-  text-decoration: none;
-  outline: none;
-  transition: 400ms;
-  background-color: transparent;
-}
-
-@media (max-width: 800px) {
-  .search {
-    width: 300px;
-  }
-}
-
-.search #search-bar:hover,
-.search #search-bar:focus {
-  background-color: #bbbbbb;
-  color: #fff;
-  margin-bottom: 200px;
-}
-
 /***********************************************************************
     Designs for login/register modal
 ***********************************************************************/

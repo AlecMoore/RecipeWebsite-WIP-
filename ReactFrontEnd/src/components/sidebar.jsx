@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import { NavLink }  from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import { Tooltip } from "@mui/material";
+import { BiFoodMenu, BiHome } from "react-icons/bi";
+import { VscAccount } from "react-icons/vsc";
+import { PiForkKnifeBold } from "react-icons/pi";
+import { MdOutlineFastfood } from "react-icons/md";
+import { TbChristmasTree } from "react-icons/tb";
+import { FaUtensilSpoon } from "react-icons/fa";
+
 import LoginModal from "./loginModal";
 import "../styles/style.css";
 
@@ -33,35 +41,76 @@ function Sidebar() {
       </i>
       <header id="header">
         <div className="sidebar-border">
-          <div className="profile">
-            <h1 className="text-light">
-              <a href="/">Spork.</a>
-            </h1>
-          </div>
+          <FaUtensilSpoon className="logo" href="/" />
           <nav id="navbar" className="nav-menu">
             <ul>
-              <li>
-                <NavLink to="/" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Home</NavLink>
-              </li>
-              <li>
-                <NavLink to="/TopRecipes" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Top Recipes</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Meals" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Meals</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Cuisines" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Cuisines</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Occasions" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Occasions</NavLink>
-              </li>
+              <Tooltip title="Home" placement="right" arrow>
+                <li>
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                  >
+                    <BiHome />
+                  </NavLink>
+                </li>
+              </Tooltip>
+              <Tooltip title="Top Recipes" placement="right" arrow>
+                <li>
+                  <NavLink
+                    to="/TopRecipes"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                  >
+                    <BiFoodMenu />
+                  </NavLink>
+                </li>
+              </Tooltip>
+              <Tooltip title="Meals" placement="right" arrow>
+                <li>
+                  <NavLink
+                    to="/Meals"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                  >
+                    <PiForkKnifeBold />
+                  </NavLink>
+                </li>
+              </Tooltip>
+              <Tooltip title="Cuisines" placement="right" arrow>
+                <li>
+                  <NavLink
+                    to="/Cuisines"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                  >
+                    <MdOutlineFastfood />
+                  </NavLink>
+                </li>
+              </Tooltip>
+              <Tooltip title="Occasions" placement="right" arrow>
+                <li>
+                  <NavLink
+                    to="/Occasions"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                  >
+                    <TbChristmasTree />
+                  </NavLink>
+                </li>
+              </Tooltip>
             </ul>
           </nav>
 
           <div id="footer">
-            <button className="account-login" onClick={openModal}>
-              Log in / Register
-            </button>
+            <NavLink onClick={openModal}>
+              <VscAccount className="nav-link" />
+            </NavLink>
 
             <Modal
               className={"login-modal"}
@@ -73,7 +122,7 @@ function Sidebar() {
               <LoginModal />
             </Modal>
 
-            <div className="container">
+            {/* <div className="container">
               <div className="copyright">
                 &copy; Copyright{" "}
                 <strong>
@@ -83,7 +132,7 @@ function Sidebar() {
               <div className="credits">
                 Made by <a href="https://discord.gg/smZjem4x4j">Degenerates</a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>

@@ -1,19 +1,16 @@
-import Sidebar from "../components/sidebar"
+import Sidebar from "../components/sidebar";
 import "../styles/style.css";
-import "../styles/LayoutStyles.css"
+import "../styles/LayoutStyles.css";
 import { Outlet } from "react-router-dom";
 
-
 const Layout = () => {
-    return (
-        <div className="Window">
-            <Sidebar />
-            <div className="outlet-content">
-                <Outlet/>
-            </div>
-        </div>
-
-    )}
-/*
- */
+  return (
+    <div className="Window">
+      <Sidebar />
+      <div className="outlet-content">
+        <Outlet />
+      </div>
+    </div>
+  );
+};
 export default Layout;
