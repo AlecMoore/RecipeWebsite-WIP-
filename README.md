@@ -1,8 +1,4 @@
 # imrb
-
-Overall ethos is to be mindful that we are a 2 man team with full time jobs and both want free time. 
-Thus the objective is to keep everything as simple and unncomplicated as possible.
-
 The overall selling point of the platform is to reward creators, but be tailored for ease of use to people using the recipes.
 The idea is to be like imdb but for recipes, whilst also making it a profitable platform for creators. 
 So take inspiration from IMDB, twitter, youtube, twitch etc as well as sites like Yummly.
